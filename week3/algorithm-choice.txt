@@ -1,0 +1,1 @@
+I picked UCB because the rewards are continuous, bounded, and noisy, so UCB’s confidence bonus explores uncertain arms until it reliably finds the highest-mean arm, whereas random wastes pulls, greedy can lock in too early, epsilon-greedy explores unneccesarily even when confident, and the basic Thompson method assumes 0/1 (Bernoulli) rewards.
