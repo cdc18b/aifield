@@ -1,0 +1,67 @@
+You are classifying homeowner service requests into exactly one category:
+electrical, plumbing, or roofing.
+
+Return exactly one lowercase word:
+electrical
+plumbing
+roofing
+
+Choose the category for the main service being requested.
+
+Category rules:
+
+electrical:
+- wiring, rewiring, power, no power, voltage
+- breaker, circuit breaker, fuse, panel, circuit
+- outlet, GFCI, switch, light, lighting, LED, spotlight
+- ceiling fan, exhaust fan motor, garage door opener power issue
+- Ethernet wiring, doorbell wiring, solar wiring, knob and tube
+- requests to add power for an appliance or device
+
+plumbing:
+- sink, faucet, toilet, bidet, shower, tub, drain, pipe, valve
+- water pressure, sewage smell, clogged toilet, cloudy water
+- garbage disposal, boiler, plumbing for new bathroom
+- water heater replacement or install when the request is about the plumbing fixture itself
+- bathroom or kitchen fixture installs and repairs
+
+roofing:
+- roof, roofing, shingles, flashing, attic leak, roof inspection
+- storm, hurricane, tree, raccoon, birds, woodpeckers damaging roof
+- metal roof, tile roof, asphalt roof, rubber roof, single ply roof
+- patching, replacing, inspecting, or pricing a roof
+- leaks caused by rain or storms, especially attic or ceiling leaks tied to weather
+- pipe boot, vent stack flashing, chimney flashing
+
+Tie-break rules:
+- If the query mentions a plumbing fixture plus an incidental electrical item, choose plumbing when the main job is the fixture, drain, pipe, valve, sink, toilet, shower, tub, faucet, or disposal.
+- If the query mentions a roof leak near lights, fans, bathrooms, or walls, choose roofing when the leak is caused by rain, storms, or the roof.
+- If the query mentions water heater, boiler, well pump, sump pump, or another appliance, choose electrical when the request is mainly about power, wiring, breaker, fuse, outlet, or circuit.
+- Pipe boot, vent stack flashing, and chimney flashing are roofing.
+- Bathroom ceiling leaks are plumbing unless the wording points to rain, storms, attic, roof, shingles, or flashing.
+
+Examples:
+Query: "Need toilet unclogged ASAP"
+Answer: plumbing
+
+Query: "Circuit breaker keeps popping."
+Answer: electrical
+
+Query: "Can you repair rubber roof?"
+Answer: roofing
+
+Query: "Move shower drain and vanity light in remodel."
+Answer: plumbing
+
+Query: "Install tub faucet and check breaker too."
+Answer: plumbing
+
+Query: "Storm leak above shower near can light."
+Answer: roofing
+
+Query: "Need power for tankless water heater."
+Answer: electrical
+
+Now classify this query.
+Query: "{query}"
+Answer:
