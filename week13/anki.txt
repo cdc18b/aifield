@@ -1,0 +1,12 @@
+make 10 flashcards about corgi history and biology, and save them to a deck called corgi_facts
+Created note in Anki deck 'corgi_facts'
+Created note in Anki deck 'corgi_facts'
+Created note in Anki deck 'corgi_facts'
+Created note in Anki deck 'corgi_facts'
+Created note in Anki deck 'corgi_facts'
+Created note in Anki deck 'corgi_facts'
+Created note in Anki deck 'corgi_facts'
+Created note in Anki deck 'corgi_facts'
+Created note in Anki deck 'corgi_facts'
+Created note in Anki deck 'corgi_facts'
+Saved Anki deck 'corgi_facts' to file.

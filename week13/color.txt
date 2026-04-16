@@ -1,0 +1,8 @@
+show me blue
+Red: 0, Green: 0, Blue: 255
+show me red
+Red: 0, Green: 0, Blue: 255
+i want red
+Red: 255, Green: 0, Blue: 0
+show me cyan
+Red: 0, Green: 255, Blue: 255
